@@ -1,19 +1,14 @@
-//Modify this file to change what commands output to your statusbar, and recompile using the make command.
+// To kill (refresh) a block, use "pkill -RTMIN+val" where val is the update signal
+// Alternatively, use "kill -val $(pidof dwmblocks)" where val is the update signal + 34
+
+// If find icons more convenient in the script, but the icon can be set here as well
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"", "cat ~/.pacupdate | sed /📦0/d",					0,		9},
-	
-	{"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-
-	{"", "~/bin/statusbar/volume",						0,		10},
-
-	{"☀", "xbacklight | sed 's/\\..*//'",					0,		11},
-	
-	{"", "~/bin/statusbar/battery",						5,		0},
-
-	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
-
-	{"", "~/bin/statusbar/clock",						5,		0},
+	{"",		"statusbar-spacer",	0,			0},
+	{"", 		"statusbar-volume",	0,			1},
+	{"",		"statusbar-cpu",	1,			0},
+	{"",		"statusbar-package",	0,			0},
+	{"",		"statusbar-date",	1,			0},
 };
 
 //sets delimeter between status commands.
