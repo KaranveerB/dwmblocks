@@ -1,7 +1,7 @@
 // To kill (refresh) a block, use "pkill -RTMIN+val" where val is the update signal
 // Alternatively, use "kill -val $(pidof dwmblocks)" where val is the update signal + 34
 
-// If find icons more convenient in the script, but the icon can be set here as well
+// I find icons more convenient in the script, but the icon can be set here as well
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"",		"statusbar-spacer",	0,			0},
