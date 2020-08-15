@@ -7,7 +7,7 @@ static const Block blocks[] = {
 	{"",		"statusbar-spacer",	0,			0},
 	{"", 		"statusbar-volume",	0,			1},
 	{"",		"statusbar-cpu",	1,			0},
-	{"",		"statusbar-package",	0,			0},
+	{"",		"statusbar-package",	3600,			2},
 	{"",		"statusbar-date",	1,			0},
 };
 
